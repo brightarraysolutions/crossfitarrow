@@ -1,0 +1,14 @@
+body {
+    background: rgb(243,3,2);
+    background: linear-gradient(145deg, rgba(99,100,101,1) 0%, rgba(255,255,255,1) 50%);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+html {
+    height: 100%;
+}
+
+.red-border {
+    border: gray 5px solid;
+}
