@@ -1,0 +1,4 @@
+baseURL = 'https://crossfitarrow.com/'
+languageCode = 'en-us'
+title = 'Cross Fit Arrow'
+theme = 'cross-fit-arrow'
