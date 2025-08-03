@@ -23,7 +23,7 @@ nav_order: 1
     <div class="col-md-6">
       <img src="/assets/images/gym2.jpeg" alt="Inside the Gym" class="img-fluid rounded shadow">
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 px-5">
       <h2 class="mb-3">Why Arrow?</h2>
       <p class="fs-5">At Arrow, we're more than a gym — we're a supportive family focused on progress, technique, and mindset. Whether you're new or experienced, we’ll guide you every step of the way.</p>
       <ul class="list-unstyled fs-5">
