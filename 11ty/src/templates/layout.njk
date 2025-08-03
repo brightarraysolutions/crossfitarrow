@@ -41,7 +41,9 @@
   </header>
   <main>
     <div class="container p-5">
-      <h1>{{ heading | safe }} </h1>
+      {%- if heading and heading | trim %}
+        <h1>{{ heading | safe }}</h1>
+      {%- endif %}
       {% include "breadcrumbs.njk" %}
       <div class="row gx-5">
         {{ content | safe }}

@@ -1,7 +1,6 @@
 ---
 layout: layout.njk
 title: Home
-heading: Welcome to Our Gym
 tags: nav
 nav_order: 1
 ---
