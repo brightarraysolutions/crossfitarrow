@@ -1,0 +1,39 @@
+---
+layout: layout.njk
+title: Gallery
+heading: Gallery
+tags: nav
+nav_order: 5
+---
+<!-- Gym Photo Carousel -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">🏋️‍♀️ Our Gym in Action</h2>
+
+  <div id="gymCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      {% for i in range(0, 8) %}
+        <button type="button" data-bs-target="#gymCarousel" data-bs-slide-to="{{ i }}" class="{% if i == 0 %}active{% endif %}" aria-current="{% if i == 0 %}true{% endif %}" aria-label="Slide {{ i + 1 }}"></button>
+      {% endfor %}
+    </div>
+
+    <!-- Carousel Items -->
+    <div class="carousel-inner">
+      {% for i in range(1, 9) %}
+        <div class="carousel-item {% if i == 1 %}active{% endif %}">
+          <img src="/assets/images/gym{{ i }}.jpeg" class="d-block w-100" alt="Gym Image {{ i }}" style="object-fit: cover; height: 800px;">
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Navigation -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#gymCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#gymCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>

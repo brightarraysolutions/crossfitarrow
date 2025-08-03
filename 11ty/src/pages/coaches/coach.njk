@@ -1,0 +1,54 @@
+---
+pagination:
+  data: coaches
+  size: 1
+  alias: coach
+  addAllPagesToCollections: coach
+permalink: "/coaches/{{ coach.name | slug }}/"
+layout: layout.njk
+---
+
+{% block content %}
+<section class="bg-light text-center py-5 mb-5 shadow-sm">
+  <div class="container">
+    <h1 class="display-4 fw-bold">🏋️ Meet {{ coach.name }} 🏋️</h1>
+    <p class="lead">{{coach.ledeText}}</p>
+  </div>
+</section>
+
+<div class="container mb-5">
+  <div class="row g-4 align-items-start">
+    <!-- Coach Image -->
+    <div class="col-md-5">
+      <div class="border rounded shadow-sm overflow-hidden" style="height: 100%; max-height: 450px;">
+        <img src="{{ coach.image }}" class="img-fluid w-100 h-100 object-fit-cover" alt="{{ coach.name }}">
+      </div>
+            {% if coach.certifications and coach.certifications.length %}
+        <h3 class="mt-5 mb-3">🎓 Certifications</h3>
+        <div class="d-flex flex-wrap gap-2">
+          {% set colors = ["primary", "success", "info", "warning", "danger", "secondary"] %}
+          {% for cert in coach.certifications %}
+            <span class="badge bg-{{ colors[loop.index0 % colors.length] }} text-light fs-6 px-3 py-2">
+              {{ cert }}
+            </span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- Coach Info -->
+    <div class="col-md-7">
+      <h2 class="mb-3">About {{ coach.name }}</h2>
+      {% for line in coach.description | split('\r\n') %}
+        <div class="mb-4">{{ line }}</div>
+      {% endfor %}
+
+
+
+      <div class="mt-4">
+        <a href="/coaches/" class="btn btn-outline-primary">← Back to Coaches</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{
+    "name": "cross-fit-arrow",
+    "version": "1.0.0",
+    "scripts": {
+        "clean": "rm -rf dist",
+        "vite:dev": "vite",
+        "vite:build": "vite build",
+        "eleventy:dev": "NODE_ENV=development npx @11ty/eleventy --serve",
+        "eleventy:build": "NODE_ENV=production npx @11ty/eleventy",
+        "start": "npm run clean && concurrently \"npm run vite:dev\" \"npm run eleventy:dev\"",
+        "build": "npm run clean && npm run vite:build && npm run eleventy:build"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^2.0.0",
+        "concurrently": "^9.2.0",
+        "sass": "^1.89.2"
+    },
+    "dependencies": {
+        "bootstrap": "^5.3.7",
+        "vite": "^7.0.6"
+    }
+}

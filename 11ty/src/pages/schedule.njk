@@ -1,0 +1,68 @@
+---
+layout: layout.njk
+title: Schedule
+heading: Schedule
+tags: nav
+nav_order: 3
+---
+
+<section class="container my-5">
+  <h1 class="mb-4 text-center">🏋️ Weekly Class Schedule 🏋️</h1>
+
+  <!-- Desktop Table -->
+  <div class="table-responsive d-none d-md-block">
+    <table class="table table-bordered text-center align-middle">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">Time</th>
+          {% for day in schedule.days %}
+            <th scope="col">{{ day }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for time in schedule.times %}
+          <tr>
+            <th scope="row" class="fw-bold">{{ time }}</th>
+            {% for day in schedule.days %}
+              {% set dayIndex = loop.index0 %}
+              {% set className = schedule.schedule[time][dayIndex] %}
+              <td>
+                {% if className %}
+                  {{ className }}
+                {% else %}
+                  <span class="text-muted">—</span>
+                {% endif %}
+              </td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mobile List Group grouped by Day -->
+  <div class="d-md-none">
+    {% for day in schedule.days %}
+      <div class="mb-4 p-2">
+        <h5 class="fw-bold text-center">{{ day }}</h5>
+        <ul class="list-group">
+          {% set dayIndex = loop.index0 %}
+          {% for time in schedule.times %}
+            {% set className = schedule.schedule[time][dayIndex] %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <span>{{ time }}</span>
+              <span>
+                {% if className %}
+                  {{ className }}
+                {% else %}
+                  <span class="text-muted">—</span>
+                {% endif %}
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</section>
