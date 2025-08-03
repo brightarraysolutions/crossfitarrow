@@ -1,0 +1,18 @@
+---
+pagination:
+  data: coaches
+  size: 1
+  alias: coach
+  addAllPagesToCollections: coach
+permalink: "/coaches/{{ coach.name | slug }}/"
+layout: layout.njk
+---
+
+<h1>{{ coach.name }}</h1>
+<p>{{ coach.description }}</p>
+<h3>Certifications:</h3>
+<ul>
+  {% for cert in coach.certifications %}
+    <li>{{ cert }}</li>
+  {% endfor %}
+</ul>

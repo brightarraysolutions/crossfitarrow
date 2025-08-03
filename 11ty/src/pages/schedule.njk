@@ -1,0 +1,14 @@
+---
+layout: layout.njk
+title: Schedule
+tags: nav
+nav_order: 3
+---
+
+<h1>{{ title }}</h1>
+
+<ul>
+  {% for entry in schedules %}
+    <li><strong>{{ entry.day }}:</strong> {{ entry.activity }} at {{ entry.time }}</li>
+  {% endfor %}
+</ul>

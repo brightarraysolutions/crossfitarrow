@@ -1,0 +1,35 @@
+// import { defineConfig } from 'vite';
+// import path from 'path';
+
+// export default defineConfig({
+//   root: 'src/assets',
+//   build: {
+//     outDir: '../../../dist',
+//     emptyOutDir: false,
+//     manifest: true,           // <<< This generates manifest.json
+//     rollupOptions: {
+//       input: path.resolve(__dirname, 'src/assets/main.css')
+//     }
+//   }
+// });
+import { defineConfig } from 'vite';
+import path from 'path';
+
+export default defineConfig({
+  root: 'src/assets',
+  build: {
+    outDir: '../../../dist/assets', // Best to isolate Vite output inside dist
+    emptyOutDir: false,
+    manifest: true,
+    rollupOptions: {
+      input: {
+        style: path.resolve(__dirname, 'src/assets/style.css'),
+        script: path.resolve(__dirname, 'src/assets/script.js')  // Add your JS entry here
+      },
+      output: {
+        entryFileNames: '[name].js',
+        assetFileNames: '[name].[ext]'
+      }
+    }
+  }
+});

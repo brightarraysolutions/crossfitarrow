@@ -1,0 +1,13 @@
+[
+    {
+      "name": "Jane Doe",
+      "description": "Certified personal trainer with 10 years experience.",
+      "certifications": ["ACE", "NASM", "CrossFit L1"]
+    },
+    {
+      "name": "John Smith",
+      "description": "Strength coach and nutrition expert.",
+      "certifications": ["CSCS", "Precision Nutrition Level 1"]
+    }
+  ]
+  

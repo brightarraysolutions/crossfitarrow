@@ -1,0 +1,11 @@
+# Node modules – don't commit this
+node_modules/
+
+# Output directory (if you're building to dist/)
+dist/
+
+# System files
+.DS_Store
+
+# Log files
+npm-debug.log*

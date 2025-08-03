@@ -1,0 +1,15 @@
+---
+layout: layout.njk
+title: Our Coaches
+tags: nav
+nav_order: 2
+---
+
+<h1>Our Coaches</h1>
+<ul>
+  {% for coach in coaches %}
+    <li>
+      <a href="/coaches/{{ coach.name | slug }}/">{{ coach.name }}</a>
+    </li>
+  {% endfor %}
+</ul>
