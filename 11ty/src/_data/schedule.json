@@ -1,14 +1,15 @@
 {
-  "times": ["5AM", "6AM", "7AM", "8AM", "8:30AM", "4:30PM", "6PM", "7PM"],
+  "times": ["5AM", "6AM", "7AM", "8AM", "8:30AM", "4:30PM", "5:30PM", "6PM", "7PM"],
   "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
   "schedule": {
     "5AM":    ["CrossFit Class", "CrossFit Class", "CrossFit Class", "CrossFit Class", "CrossFit Class", ""],
-    "6AM":    ["CrossFit Class", "CrossFit Class", "CrossFit Class", "CrossFit Class", "CrossFit Class", "CrossFit Class"],
+    "6AM":    ["CrossFit Class", "CrossFit Class", "CrossFit Class", "CrossFit Class", "CrossFit Class", ""],
     "7AM":    ["", "", "", "", "", "CrossFit Class"],
-    "8AM":    ["CrossFit Class", "", "CrossFit Class", "", "CrossFit Class", ""],
+    "8AM":    ["CrossFit Class", "", "CrossFit Class", "", "CrossFit Class", "CrossFit Class"],
     "8:30AM": ["", "'Master' Class", "", "'Master' Class", "", ""],
     "4:30PM": ["CrossFit Class", "CrossFit Class", "CrossFit Class", "CrossFit Class", "CrossFit Class", ""],
-    "6PM":    ["CrossFit Class", "CrossFit Class", "Mobility Class", "CrossFit Class", "CrossFit Class", ""],
+    "5:30PM": ["CrossFit Class", "CrossFit Class", "", "", "CrossFit Class", ""],
+    "6PM":    ["", "", "Mobility Class", "", "", ""],
     "7PM":    ["", "", "", "", "Member Open Gym", ""]
   }
 }
