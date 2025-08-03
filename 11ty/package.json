@@ -11,7 +11,9 @@
         "build": "npm run clean && npm run vite:build && npm run eleventy:build"
     },
     "devDependencies": {
-        "@11ty/eleventy": "^2.0.0"
+        "@11ty/eleventy": "^2.0.0",
+        "concurrently": "^9.2.0",
+        "sass": "^1.89.2"
     },
     "dependencies": {
         "bootstrap": "^5.3.7",

@@ -1,0 +1,27 @@
+{% set segments = page.url | trim('/') | split('/') %}
+{% set base = '' %}
+
+{% if segments.length %}
+<nav aria-label="breadcrumb" class="mb-4">
+   <ol class="breadcrumb small text-body-secondary">
+    <li class="breadcrumb-item">
+      <a href="/">🏠 Home</a>
+    </li>
+
+    {% for segment in segments %}
+      {% if segment %}
+        {% set base = base + '/' + segment %}
+        {% if loop.last %}
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ segment | slugToTitle }}
+          </li>
+        {% else %}
+          <li class="breadcrumb-item">
+            <a href="{{ base }}/">{{ segment | slugToTitle }}</a>
+          </li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </ol>
+</nav>
+{% endif %}

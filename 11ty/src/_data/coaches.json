@@ -1,13 +1,33 @@
 [
     {
-      "name": "Jane Doe",
-      "description": "Certified personal trainer with 10 years experience.",
-      "certifications": ["ACE", "NASM", "CrossFit L1"]
+      "name": "Jessica Schneider",
+      "description": "Hey crew! I am coach Jess, and the proud owner of CrossFit Arrow! I have been in the CrossFit space for roughly a decade of my life as an athlete and a coach. CrossFit came into my life when I was at my lowest mentally and physically. In 2015, I quickly realized that this ‘thing’ was SO much more than a gym/hobby. It was a community. It was a safe place to become who I was always meant to be. I have met an incredible amount of humans in this timeframe and each of them has molded me into the person I am. In 2019, I decided to take it to the next level and become a coach alongside my athlete drive. There is nothing like watching someone do something they never thought possible. It’s truly magical! Sometimes all you need is one voice to believe in you – I wanted to become that voice time and time again for those that needed it. Viola, here we are! I opened my affiliate doors in November of 2024, and the rest is history.\r\nOutside of my CrossFit affiliate, I also run my own nutrition coaching business, Always Forward Nutrition. I began that in 2021 as a pipe dream and it has since took off! I am a wife to my wonderful husband Clay and a mother to our four beautiful children-Brentley, Everley, Wesley, and Hadley. We also have a Great Dane pup named Zeus and he is the absolute love of our lives! I enjoy anything health and fitness related. I also enjoy hiking, music, reading, walking our pup, and spending all the time in the world with my family and friends. My favorite CrossFit workout is ‘FRAN’! Fun fact about me is that I was adopted at age 2.\r\nI owe this community my life and I am determined to give so many theirs back! Always tell your story, you never know who you are inspiring along the way! Let’s get healthy together.",
+      "certifications": ["CrossFit Level 1 Trainer", "CrossFit Level 2 Trainer", "CrossFit Level 1 Nutrition", "CrossFit Level 1 Gymnastics", "CrossFit Level 1 Bergener Weightlifting"],
+      "image":"\\assets\\images\\coaches\\Jessica.jpg"
     },
     {
-      "name": "John Smith",
-      "description": "Strength coach and nutrition expert.",
-      "certifications": ["CSCS", "Precision Nutrition Level 1"]
+      "name": "Hannelore Bruhn",
+      "description": "I have loved sports/fitness since I can remember. I played lots of volleyball, ran and jumped in track, did a few sprint triathlons, completed several ½ marathons and a full.  However, in 2017, I was introduced to CrossFit by a friend, and absolutely fell in love with the sport, so much so, that her two boys Nathanael and Gabriel are also CrossFit athletes! The biggest part of this sport that I love is the strong community that it generates. \r\nCrossFit has changed and saved my life.  If I had a wish, it would be that everyone would try this sport.  From children to grandparents, with any athletic ability, there is a place for you here. CrossFit gives you the opportunity to be a better version of yourself.\r\nBesides being a CrossFit coach for the last 2 plus years, I have a BA in accounting and work part time for my husband as his office manager, at his dental office.  I love baking, watching movies, hanging out with my family and friends and my two kitties.",
+      "certifications": ["CrossFit Level 1 Trainer", "CrossFit Level 2 Trainer", "CrossFit Kids Trainer", "CrossFit Gymnastic Level 1", "Burgener Weightlifting Level 1"],
+      "image":"\\assets\\images\\coaches\\Hannelore.jpg"
+    },
+    {
+      "name": "Emilie Gasser",
+      "description": "Hey there! I’m Emilie, a CrossFit coach who believes fitness is about so much more than just physical strength—it's about building resilience, confidence, and community. I first stepped into a CrossFit gym not because I wanted to compete, but because I needed a space to take care of my emotional and mental health. What I found was not just a workout, but a supportive community that lifted me up in every way. Some of my closest friendships have come from this space, and that’s something I’ll always be grateful for.\r\nMy inspiration comes from many places, including my faith. Proverbs 27:17 says, \"As iron sharpens iron, so one person sharpens another,\" and that’s exactly what CrossFit is to me—people coming together to make each other stronger, both inside and out.\r\nNow, as a coach, my goal is to help others find that same sense of strength and belonging. I love working with athletes of all backgrounds, to help them move well, stay strong, and enjoy every step of the journey. Whether you're here to hit PRs or just feel better in your everyday life, I’m here to support you. Let’s get stronger together!",
+      "certifications": ["CrossFit Level 1 Trainer"],
+      "image":"\\assets\\images\\coaches\\Emilie.jpg"
+    },
+    {
+      "name": "Nathanael Bruhn",
+      "description": "My name is Nathanael (Nate) Bruhn, business student at Marquette and avid sports and country music fanatic. I have been involved with CrossFit since 2019 and got my coach’s certification in June of 2024.\r\nCoaching has been such a fulfilling experience and an opportunity I cherish day in and day out. Watching the athletes at our affiliate grow not only in their physical gains but in creating a culture of positivity, encouragement, and high energy to improve their confidence inside and out of the gym is inspiring. \r\nMy favorite CrossFit movement has to be the dumbbell snatch!  Fun fact about myself is that I once saw Giannis Antetokounmpo at a Baskin Robins.",
+      "certifications": ["CrossFit Level 1 Trainer", "Burgener Weightlifting Level 1"],
+      "image":"\\assets\\images\\coaches\\Nathanael.jpg"
+    },
+    {
+      "name": "Cesie Dahm",
+      "description": "My name is Cesie Dahm. My husband, Ryan and I have 2 kids - Raegan (9) and Luka (5). I have been a kindergarten teacher for 12 years in Random Lake, WI right around the corner from CrossFit Arrow! I have been in the CrossFit world for almost 5 years. Within those 5 years, I have lost over 100 pounds and maintained that weight loss all through CrossFit and counting macros. With that accomplishment I decided I wanted to continue to inspire people, but on another level so I decided to pursue my certification. CrossFit has given me my life back and I have gained an entire extended family through it, so I just want to help others experience what I have!\r\nSome of my favorite memories have been made in a CrossFit box, so I would say I love it all, but my absolute favorite movement is a clean and jerk. I live a pretty simple and uneventful life, but something many people don't know is that I grew up in Milwaukee at my grandpa's pet store, Hoffer's Tropic Life Pets. My grandpa created the world's 2nd largest pet store and we even had alligators! Fun fact, I got bit by one of those alligators while I was hosting a child's birthday party!\r\n Our Arrow family is a tight knit community that thrives off positive energy. I do believe I bring an uplifting and positive vibe to all Arrow family members. I love to help plan our outings and get everyone together outside of the gym! ",
+      "certifications": ["CrossFit Level 1 Trainer"],
+      "image":"\\assets\\images\\coaches\\Cesie.jpg"
     }
   ]
   

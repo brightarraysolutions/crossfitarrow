@@ -1,4 +1,4 @@
-# Static Site Generator for Cross Fit Arrow
+# Static Site Generator for CrossFit Arrow
 
 Development Dependencies:
     1. NPM - On Macbook it is easiest to install NPM with home brew. Command is `brew install node`

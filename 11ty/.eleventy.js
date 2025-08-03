@@ -9,6 +9,27 @@ module.exports = function(eleventyConfig) {
     );
   });
 
+  // Add the ability to split in njk files
+  eleventyConfig.addFilter("split", function(str, delimiter) {
+    if (!str) return [];
+    return str.split(delimiter);
+  });
+
+  // Add the ability to truncate in njk files
+  eleventyConfig.addFilter("truncate", function(str, length = 256) {
+    if (!str || typeof str !== "string") return "";
+    if (str.length <= length) return str;
+    return str.slice(0, length).trim() + "…";
+  });
+
+  // Add the ability to slug to title for
+  eleventyConfig.addFilter("slugToTitle", function(slug) {
+    return slug
+      .replace(/-/g, ' ')
+      .replace(/\b\w/g, l => l.toUpperCase());
+  });
+  
+
   // Passthrough copy for images with explicit dest folder
   eleventyConfig.addPassthroughCopy({
     "src/assets/images": "assets/images"
@@ -31,6 +52,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode("asset", function(filename) {
     if (isDev) {
       // In dev, serve from Vite dev server
+      // If the filename ends with .scss, change to .css for dev server URL
+      if (filename.endsWith('.css')) {
+        filename = filename.replace('.css', '.scss');
+      }
       return `http://localhost:5173/${filename}`;
     }
 
