@@ -7,7 +7,7 @@ nav_order: 1
 ---
 
 <!-- Hero Section -->
-<section class="bg-primary text-white text-center py-5">
+<section class="bg-light text-center py-5 shadow-sm">
   <div class="container">
     <h1 class="display-4 fw-bold">🏹 Welcome to the Arrow Family</h1>
     <p class="lead">Where we always move forward.</p>
@@ -53,7 +53,7 @@ nav_order: 1
       </div>
       <div class="col-md-4">
         <div class="card shadow-sm h-100">
-          <img src="/assets/images/gym7.jpeg" class="card-img-top" alt="Youth Programs">
+          <img src="/assets/images/gym8.jpeg" class="card-img-top" alt="Youth Programs">
           <div class="card-body">
             <h5 class="card-title">Master Class</h5>
             <p class="card-text">Fun and safe training for kids and teens that builds strength, confidence, and coordination.</p>
@@ -63,11 +63,11 @@ nav_order: 1
       </div>
       <div class="col-md-4">
         <div class="card shadow-sm h-100">
-          <img src="/assets/images/gym3.jpeg" class="card-img-top" alt="Nutrition Coaching">
+          <img src="/assets/images/gym7.jpeg" class="card-img-top" alt="Nutrition Coaching">
           <div class="card-body">
             <h5 class="card-title">Our Schedule</h5>
             <p class="card-text">Work with certified coaches to dial in your nutrition and hit your performance or body goals.</p>
-            <a href="/schedules/" class="btn btn-link mt-auto align-self-end">More Info</a>
+            <a href="/schedule/" class="btn btn-link mt-auto align-self-end">More Info</a>
           </div>
         </div>
       </div>
@@ -80,6 +80,6 @@ nav_order: 1
   <div class="container">
     <h2 class="mb-3">Ready to take the first step?</h2>
     <p class="fs-5">Sign up for a class — we’d love to meet you!</p>
-    <a href="https://fvhfvls.pushpress.com/landing/plans?category=all" class="btn btn-light btn-lg shadow">Get Started</a>
+    <a href="https://fvhfvls.pushpress.com/landing/plans?category=all" class="btn btn-light btn-lg shadow" target="_blank">Get Started</a>
   </div>
 </section>

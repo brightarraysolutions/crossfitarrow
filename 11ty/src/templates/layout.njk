@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">  
-  <title>CrossFit Arrow - {{ title }}</title> 
-  <link rel="stylesheet" href="{% asset 'style.css' %}"/>   
+  <meta name="description" content="">
+  <title>CrossFit Arrow - {{ title }}</title>
+  <link rel="stylesheet" href="{% asset 'style.css' %}" />
   <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
 </head>
 
@@ -14,7 +14,7 @@
   <header data-bs-theme="dark">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img src="/assets/images/logo.png" height="48px"></img>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -24,35 +24,64 @@
         <div class="collapse navbar-collapse flex-row-reverse" id="navbarCollapse">
           <ul class="navbar-nav  mb-2 mb-md-0">
             {% for item in collections.nav %}
-              {% set isActive = item.url == page.url %}
-              <li class="nav-item">
-                <a class="nav-link {% if isActive %}active{% endif %}" href="{{ item.url }}">{{ item.data.title }}</a>
-              </li> 
+            {% set isActive = item.url == page.url %}
+            <li class="nav-item">
+              <a class="nav-link {% if isActive %}active{% endif %}" href="{{ item.url }}">{{ item.data.title }}</a>
+            </li>
             {% endfor %}
-               <li>
-                <a class="btn btn-primary ms-4" href="https://fvhfvls.pushpress.com/landing/plans?category=all" target="_blank">Sign up</a>
-              </li>
+            <li>
+              <a class="btn btn-primary ms-4" href="https://fvhfvls.pushpress.com/landing/plans?category=all"
+                target="_blank">Sign up</a>
+            </li>
           </ul>
-       
+
         </div>
       </div>
     </nav>
   </header>
   <main>
-    <div class="container"> 
+    <div class="container">
       <h1>{{ heading | safe }} </h1>
-        {% include "breadcrumbs.njk" %}
-      <div class="row gx-5"> 
-        {{ content | safe }} 
+      {% include "breadcrumbs.njk" %}
+      <div class="row gx-5">
+        {{ content | safe }}
       </div>
     </div>
-    <!-- FOOTER -->
-    <footer class="container">
-      <p class="float-end">
-        <a href="#">Back to top</a>
-      </p> 
+    <footer class="bg-dark text-light py-5 mt-5">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- Column 1: Address -->
+          <div class="col-md-4 mb-4 mb-md-0 text-center">
+            <h5 class="text-uppercase">📍 Address</h5>
+            <p class="mb-0">{{ contact.Address.StreetAddress }}</p>
+            <p class="mb-0">{{ contact.Address.City }}, {{ contact.Address.State }} {{ contact.Address.Zip }}</p>
+            <a href="{{contact.Address.DirectionsLink}}" target="_blank">Get Directions</a>
+          </div>
+
+          <!-- Column 2: Phone -->
+          <div class="col-md-4 mb-4 mb-md-0 text-center">
+            <h5 class="text-uppercase">📞 Call Us</h5>
+            <a href="tel:{{ contact.Phone | replace('(', '') | replace(')', '') | replace(' ', '') | replace('-', '') }}"
+              class="text-light text-decoration-none">
+              {{ contact.Phone }}
+            </a>
+          </div>
+
+          <!-- Column 3: Email -->
+          <div class="col-md-4 text-center">
+            <h5 class="text-uppercase">✉️ Email</h5>
+            <a href="mailto:{{ contact.Email }}" class="text-light text-decoration-none">
+              {{ contact.Email }}
+            </a>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4">
+      </div>
     </footer>
+
   </main>
   <script type="module" src="{% asset 'script.js' %}"></script>
-</body> 
+</body>
+
 </html>

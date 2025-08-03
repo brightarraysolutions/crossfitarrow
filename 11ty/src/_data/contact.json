@@ -1,0 +1,12 @@
+{
+    "Name": "Jessica Schneider",
+    "Email": "jessica.reams17@gmail.com",
+    "Phone": "19204538289",
+    "Address": {
+        "StreetAddress": "430 1st Street",
+        "City":"WI",
+        "State":"Random Lake, WI ",
+        "Zip":"53075",
+        "DirectionsLink":"https://maps.app.goo.gl/EqR7ZEFM1qPjmyRU7"
+    }
+}
