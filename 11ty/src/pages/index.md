@@ -20,7 +20,7 @@ nav_order: 1
 <section class="container py-5">
   <div class="row align-items-center g-5">
     <div class="col-md-6">
-      <img src="/assets/images/gym2.jpeg" alt="Inside the Gym" class="img-fluid rounded shadow">
+      <img src="/assets/images/gym2.jpeg" alt="Inside the Gym #2" class="img-fluid rounded shadow">
     </div>
     <div class="col-md-6 px-5">
       <h2 class="mb-3">Why Arrow?</h2>
@@ -42,7 +42,7 @@ nav_order: 1
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card shadow-sm h-100">
-          <img src="/assets/images/gym5.jpeg" class="card-img-top" alt="Group Classes">
+          <img src="/assets/images/gym5.jpeg" class="card-img-top" alt="Inside the Gym #5" >
           <div class="card-body">
             <h5 class="card-title">Meet our Coaches</h5>
             <p class="card-text">Coach-led workouts designed for all levels — from beginner to advanced. No experience needed!</p>
@@ -52,7 +52,7 @@ nav_order: 1
       </div>
       <div class="col-md-4">
         <div class="card shadow-sm h-100">
-          <img src="/assets/images/gym8.jpeg" class="card-img-top" alt="Youth Programs">
+          <img src="/assets/images/gym8.jpeg" class="card-img-top" alt="Inside the Gym #8" >
           <div class="card-body">
             <h5 class="card-title">Master Class</h5>
             <p class="card-text">Fun and safe training for kids and teens that builds strength, confidence, and coordination.</p>
@@ -62,7 +62,7 @@ nav_order: 1
       </div>
       <div class="col-md-4">
         <div class="card shadow-sm h-100">
-          <img src="/assets/images/gym7.jpeg" class="card-img-top" alt="Nutrition Coaching">
+          <img src="/assets/images/gym7.jpeg" class="card-img-top" alt="Inside the Gym #7" >
           <div class="card-body">
             <h5 class="card-title">Our Schedule</h5>
             <p class="card-text">Work with certified coaches to dial in your nutrition and hit your performance or body goals.</p>
