@@ -41,17 +41,17 @@ nav_order: 3
     </table>
   </div>
 
-  <!-- Mobile List Group -->
+  <!-- Mobile List Group grouped by Day -->
   <div class="d-md-none">
-    {% for time in schedule.times %}
-      <div class="mb-4">
-        <h5 class="fw-bold">{{ time }}</h5>
+    {% for day in schedule.days %}
+      <div class="mb-4 p-2">
+        <h5 class="fw-bold text-center">{{ day }}</h5>
         <ul class="list-group">
-          {% for day in schedule.days %}
-            {% set dayIndex = loop.index0 %}
+          {% set dayIndex = loop.index0 %}
+          {% for time in schedule.times %}
             {% set className = schedule.schedule[time][dayIndex] %}
             <li class="list-group-item d-flex justify-content-between align-items-center">
-              <span>{{ day }}</span>
+              <span>{{ time }}</span>
               <span>
                 {% if className %}
                   {{ className }}
