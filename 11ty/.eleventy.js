@@ -73,7 +73,7 @@ module.exports = function(eleventyConfig) {
       input: "src/pages",
       includes: "../templates",
       data: "../_data",
-      output: "../dist"
+      output: "dist"
     }
   };
 };
