@@ -6,72 +6,80 @@ tags: nav
 nav_order: 1
 ---
 
-Explore our coaches, view our gallery, and check out the class schedule!
-
-
-<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <!-- START THE FEATURETTES -->
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading.
-          <span class="text-body-secondary">It’ll blow your mind.</span>
-        </h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose
-          here.</p>
-      </div>
-      <div class="col-md-5">
-        <svg aria-label="Placeholder: 500x500"
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500"
-          preserveaspectratio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
-          <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-        </svg>
-      </div>
-    </div>
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good.
-          <span class="text-body-secondary">See for yourself.</span>
-        </h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
-          layout
-          would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg aria-label="Placeholder: 500x500"
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500"
-          preserveaspectratio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
-          <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-        </svg>
-      </div>
-    </div>
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one.
-          <span class="text-body-secondary">Checkmate.</span>
-        </h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-          intended to be
-          actually read, simply here to give you a better view of what this would look like with some actual content.
-          Your
-          content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg aria-label="Placeholder: 500x500"
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500"
-          preserveaspectratio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect>
-          <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-        </svg>
-      </div>
-    </div>
-    <hr class="featurette-divider">
-    <!-- /END THE FEATURETTES -->
+<!-- Hero Section -->
+<section class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4 fw-bold">🏹 Welcome to the Arrow Family</h1>
+    <p class="lead">Where we always move forward.</p>
+    <p class="mt-4 fs-5">Come check out our box where each class is coach led from start to finish! We have experienced/certified coaches from L1, L2, Kids, Gymnastics, Nutrition, and Weightlifting!</p>
+    <p class="fs-5">Come see what we have to offer! You won't be disappointed.</p>
+    <a href="/coaches/" class="btn btn-light btn-lg mt-3 shadow">Meet Our Coaches</a>
   </div>
+</section>
+
+<!-- Image + Text Split -->
+<section class="container py-5">
+  <div class="row align-items-center g-5">
+    <div class="col-md-6">
+      <img src="/assets/images/gym2.jpeg" alt="Inside the Gym" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6">
+      <h2 class="mb-3">Why Arrow?</h2>
+      <p class="fs-5">At Arrow, we're more than a gym — we're a supportive family focused on progress, technique, and mindset. Whether you're new or experienced, we’ll guide you every step of the way.</p>
+      <ul class="list-unstyled fs-5">
+        <li>✅ Certified, experienced coaches</li>
+        <li>✅ Focus on personal growth</li>
+        <li>✅ Fun, inclusive community</li>
+        <li>✅ Nutrition + recovery support</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Programs Section -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">📋 Learn more about us</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="/assets/images/gym5.jpeg" class="card-img-top" alt="Group Classes">
+          <div class="card-body">
+            <h5 class="card-title">Meet our Coaches</h5>
+            <p class="card-text">Coach-led workouts designed for all levels — from beginner to advanced. No experience needed!</p>
+            <a href="/coaches/" class="btn btn-link mt-auto align-self-end">More Info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="/assets/images/gym7.jpeg" class="card-img-top" alt="Youth Programs">
+          <div class="card-body">
+            <h5 class="card-title">Master Class</h5>
+            <p class="card-text">Fun and safe training for kids and teens that builds strength, confidence, and coordination.</p>
+            <a href="/master-class/" class="btn btn-link mt-auto align-self-end">More Info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="/assets/images/gym3.jpeg" class="card-img-top" alt="Nutrition Coaching">
+          <div class="card-body">
+            <h5 class="card-title">Our Schedule</h5>
+            <p class="card-text">Work with certified coaches to dial in your nutrition and hit your performance or body goals.</p>
+            <a href="/schedules/" class="btn btn-link mt-auto align-self-end">More Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="text-center py-5 bg-secondary text-white">
+  <div class="container">
+    <h2 class="mb-3">Ready to take the first step?</h2>
+    <p class="fs-5">Sign up for a class — we’d love to meet you!</p>
+    <a href="https://fvhfvls.pushpress.com/landing/plans?category=all" class="btn btn-light btn-lg shadow">Get Started</a>
+  </div>
+</section>
